@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ | First Royal Microfinance Bank</title>
+  <meta name="description" content="Frequently asked questions about First Royal Microfinance Bank accounts, loans, and services.">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .faq-item { border: 1px solid var(--border-color); border-radius: var(--radius-md); margin-bottom: 12px; overflow: hidden; background: var(--bg-card); transition: var(--transition); }
+    .faq-item:hover { border-color: var(--gold-pale); }
+    .faq-question { width: 100%; padding: 20px 28px; background: none; border: none; display: flex; justify-content: space-between; align-items: center; cursor: pointer; font-family: inherit; font-size: 1.05rem; font-weight: 600; color: var(--text-main); text-align: left; transition: var(--transition); }
+    .faq-question:hover { color: var(--gold); }
+    .faq-question svg { width: 20px; height: 20px; stroke: var(--gold); fill: none; stroke-width: 2.5; transition: transform 0.3s; flex-shrink: 0; margin-left: 16px; }
+    .faq-question.active svg { transform: rotate(180deg); }
+    .faq-answer { max-height: 0; overflow: hidden; transition: max-height 0.4s cubic-bezier(0.4,0,0.2,1), padding 0.4s; padding: 0 28px; color: var(--text-muted); line-height: 1.7; }
+    .faq-answer.open { max-height: 500px; padding: 0 28px 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-left">
+        <span><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +234 803 123 4567</span>
+        <span><svg viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg> info@firstroyalmfb.com</span>
+        <span><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Mon - Fri: 8:00 AM - 4:00 PM</span>
+      </div>
+      <div class="top-bar-right">
+        <a href="career.html">Careers</a>
+        <a href="faq.html">FAQ</a>
+        <div class="top-bar-social">
+          <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+          <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+          <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.01" y2="6.5"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="index.html" class="logo">
+        <img src="images/logo-bg-blk.png" alt="First Royal MFB" class="logo-img logo-dark">
+        <img src="images/logo-bg-white.png" alt="First Royal MFB" class="logo-img logo-light">
+      </a>
+      <ul class="nav-menu">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li>
+          <a href="products.html">Products <svg class="chevron" viewBox="0 0 24 24"><polyline points="9 18 15 12 9 6"/></svg></a>
+          <div class="mega-menu">
+            <div class="mega-menu-grid">
+              <div class="mega-menu-col">
+                <h4>Savings</h4>
+                <a href="products.html#savings"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg><div><span class="mm-text">Royal Savings Account</span><span class="mm-desc">Build your wealth securely</span></div></a>
+                <a href="products.html#target"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg><div><span class="mm-text">Target Savings</span><span class="mm-desc">Save towards your goals</span></div></a>
+                <a href="products.html#fixed"><svg viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg><div><span class="mm-text">Fixed Deposit</span><span class="mm-desc">Higher returns on savings</span></div></a>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Loans</h4>
+                <a href="products.html#micro"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg><div><span class="mm-text">Micro Loans</span><span class="mm-desc">Quick access to funds</span></div></a>
+                <a href="products.html#sme"><svg viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg><div><span class="mm-text">SME Loans</span><span class="mm-desc">Grow your business</span></div></a>
+                <a href="products.html#group"><svg viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg><div><span class="mm-text">Group Lending</span><span class="mm-desc">Collective financial growth</span></div></a>
+              </div>
+              <div class="mega-menu-col">
+                <h4>Accounts</h4>
+                <a href="products.html#current"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg><div><span class="mm-text">Current Account</span><span class="mm-desc">Daily banking made easy</span></div></a>
+                <a href="products.html#corporate"><svg viewBox="0 0 24 24"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg><div><span class="mm-text">Corporate Account</span><span class="mm-desc">Solutions for enterprises</span></div></a>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="career.html">Careers</a></li>
+        <li><a href="faq.html" class="active">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="nav-cta">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+          <svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>
+        </button>
+        <a href="#" class="btn btn-outline">Internet Banking</a>
+        <a href="contact.html" class="btn btn-gold">Open Account</a>
+        <button class="menu-toggle" aria-label="Toggle menu"><span></span><span></span><span></span></button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="mobile-overlay"></div>
+<div class="mobile-menu">
+    <div class="mobile-menu-header">
+      <button class="mobile-menu-close" aria-label="Close menu"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+    </div>
+    <nav class="mobile-menu-nav">
+      <a href="index.html">Home</a>
+      <a href="about.html">About Us</a>
+      <a href="products.html">Products</a>
+      <a href="services.html">Services</a>
+      <a href="career.html">Careers</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <div class="mobile-menu-footer">
+      <a href="contact.html" class="btn btn-gold">Open Account</a>
+      <a href="#" class="btn btn-outline">Internet Banking</a>
+      <div class="mobile-menu-contact">
+        <span><svg viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.56.35 1.17.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg> +234 803 123 4567</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Hero -->
+  <section class="hero-static">
+    <div class="hero-static-bg" style="background-image: url('images/Front.png')"></div>
+    <div class="hero-content hero-inner">
+      <h1>Frequently Asked <span>Questions</span></h1>
+    </div>
+  </section>
+
+  <!-- Account Opening -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24"><rect x="1" y="4" width="22" height="16" rx="2" ry="2"/><line x1="1" y1="10" x2="23" y2="10"/></svg> Account Opening</div>
+        <h2 class="section-title">Opening an Account</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr;">
+        <div class="faq-item reveal">
+          <button class="faq-question">What documents do I need to open a savings account? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">You need a valid means of identification (National ID, Driver's License, International Passport, or Voter's Card), two passport photographs, and a recent utility bill for address verification. For non-Nigerians, a valid residence permit is also required.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How much do I need to open an account? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Our Royal Savings Account requires a minimum opening balance of just &#8358;1,000. Current Accounts require &#8358;5,000, while Fixed Deposit Accounts start at &#8358;50,000. We believe banking should be accessible to everyone.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">Can I open an account online? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Yes! You can start the process online by filling out our digital application form. However, you'll need to visit any of our branches with your original documents to complete the KYC verification before your account is fully activated.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How long does it take to open an account? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Account opening takes approximately 15-30 minutes at any of our branches, provided you have all required documents. Your account number is generated instantly, and you'll receive your debit card within 3-5 working days.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Loans -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Loans</div>
+        <h2 class="section-title">Loan Questions</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr;">
+        <div class="faq-item reveal">
+          <button class="faq-question">What types of loans do you offer? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">We offer Micro Loans (&#8358;50,000 - &#8358;5 million), SME Loans (&#8358;500,000 - &#8358;50 million), Royal Bliz Loans for civil servants, Group Loans, ABC Loans for SMEs, and asset financing. Each product is tailored to different needs and income levels.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How long does loan approval take? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Micro loans are typically approved within 24-48 hours. SME loans may take 3-5 business days depending on the amount and documentation. Royal Bliz loans for civil servants are usually processed within 48 hours due to our streamlined verification process.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">What are the interest rates on loans? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Interest rates vary by product and are competitive within the microfinance sector. Micro Loans start from 3% monthly, SME Loans from 2.5% monthly, and Royal Bliz civil servant loans enjoy preferential rates starting from 2% monthly. Contact us for a personalized quote.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">Can I get a loan without collateral? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Yes! Our Micro Loans and Royal Bliz loans do not require physical collateral for amounts up to certain thresholds. We use alternative credit assessment methods including guarantors, salary verification, and group lending arrangements.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">What is the maximum loan tenor? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Micro Loans have a maximum tenor of 24 months. SME Loans can extend up to 36 months depending on the purpose. Fixed Deposit-backed loans can match your deposit tenor. Group loans typically have 6-12 month tenors.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Digital Banking -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2" ry="2"/><line x1="12" y1="18" x2="12.01" y2="18"/></svg> Digital Banking</div>
+        <h2 class="section-title">USSD, Mobile & Internet Banking</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr;">
+        <div class="faq-item reveal">
+          <button class="faq-question">What is the USSD code for First Royal MFB? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Our USSD code is <strong>*347*000#</strong>. Dial it from any mobile phone (smartphone or feature phone) to access banking services without needing internet. It works on all Nigerian networks including MTN, Glo, Airtel, and 9mobile.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">What can I do with the USSD service? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">You can check your balance, transfer funds to any bank account, buy airtime and data, pay bills (electricity, cable TV, water), and withdraw cash at agent locations. All from your basic mobile phone, no app download required.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">Is there a mobile app available? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Yes! Our mobile app is available for download on both Google Play Store and Apple App Store. The app offers biometric login, instant transfers, bill payments, account statements, and push notifications for all transactions.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How do I reset my Internet Banking password? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Click "Forgot Password" on the login page and enter your registered email or phone number. You'll receive a verification code to reset your password. Alternatively, visit any branch with your ID for assisted password reset.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Savings -->
+  <section class="section" style="background: var(--bg-alt);">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2" ry="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg> Savings</div>
+        <h2 class="section-title">Savings & Deposits</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr;">
+        <div class="faq-item reveal">
+          <button class="faq-question">What is the interest rate on savings accounts? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Our Royal Savings Account offers competitive interest rates of up to 6% per annum, calculated daily and paid monthly. Fixed Deposit accounts can earn up to 12% per annum depending on the tenor and amount.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">What is the SuperKid Account? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">SuperKid is a savings account designed for children under 18. Parents or guardians can open and manage the account, with attractive interest rates to help grow your child's future fund. It also comes with financial literacy materials tailored for young learners.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">How do I withdraw from my Fixed Deposit before maturity? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Early withdrawal from a Fixed Deposit is possible but attracts a penalty fee and reduced interest rate. We recommend keeping your funds until maturity for maximum returns. Contact your branch for specific terms.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">Are my deposits insured? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Yes! All customer deposits are fully insured by the Nigeria Deposit Insurance Corporation (NDIC). Your money is safe with us. We are also licensed and regulated by the Central Bank of Nigeria (CBN).</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- General -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header reveal">
+        <div class="section-label"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> General</div>
+        <h2 class="section-title">General Questions</h2>
+      </div>
+      <div class="features-grid" style="grid-template-columns: 1fr;">
+        <div class="faq-item reveal">
+          <button class="faq-question">What are your operating hours? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Our branches are open Monday to Friday, 8:00 AM to 4:00 PM. Selected branches open on Saturdays from 9:00 AM to 1:00 PM. Our digital banking services (USSD, mobile app, internet banking) are available 24/7.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How can I locate the nearest branch? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">You can find your nearest branch on our Contact page or by calling our customer service line at +234 803 123 4567. We currently have 12 branches across Nigeria in Lagos, Abuja, Port Harcourt, and other major cities.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-2">
+          <button class="faq-question">What should I do if I lose my debit card? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Call our emergency hotline immediately: <strong>+234 803 123 4567</strong>. Our lines are open 24/7 for card blocking. You can also block your card via Internet Banking or by visiting any branch. A replacement card will be issued within 3-5 working days.</div>
+        </div>
+        <div class="faq-item reveal reveal-delay-1">
+          <button class="faq-question">How do I report fraud or suspicious activity? <svg viewBox="0 0 24 24"><polyline points="6 9 12 15 18 9"/></svg></button>
+          <div class="faq-answer">Report immediately by calling our 24/7 fraud hotline: <strong>+234 803 123 4567</strong> or emailing <strong>fraud@firstroyalmfb.com</strong>. You can also report via the mobile app or by visiting any branch. We take fraud prevention seriously and investigate all reports promptly.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content reveal">
+        <h2>Still Have Questions?</h2>
+        <p>Our customer service team is ready to help. Reach out and we'll get back to you promptly.</p>
+        <div class="hero-buttons">
+          <a href="contact.html" class="hero-btn-light">Contact Us <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+          <a href="tel:+2348031234567" class="hero-btn-outline">Call Now <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo-footer.png" alt="First Royal MFB" class="footer-logo-img">
+          </a>
+          <p>First Royal Microfinance Bank Limited is licensed by the Central Bank of Nigeria (CBN) to provide microfinance banking services across Nigeria.</p>
+          <div class="footer-social">
+            <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+            <a href="#" aria-label="Twitter"><svg viewBox="0 0 24 24"><path d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z"/></svg></a>
+            <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+            <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg></a>
+          </div>
+        </div>
+        <div class="footer-col">
+          <h4>Quick Links</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About Us</a>
+          <a href="products.html">Products</a>
+          <a href="services.html">Services</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Products</h4>
+          <a href="products.html#savings">Savings Account</a>
+          <a href="products.html#current">Current Account</a>
+          <a href="products.html#micro">Micro Loans</a>
+          <a href="products.html#sme">SME Loans</a>
+          <a href="products.html#fixed">Fixed Deposit</a>
+        </div>
+        <div class="footer-col footer-newsletter">
+          <h4>Newsletter</h4>
+          <p>Subscribe to receive financial tips, product updates, and exclusive offers.</p>
+          <form class="newsletter-form" onsubmit="event.preventDefault(); this.querySelector('button').textContent='Subscribed!';">
+            <input type="email" placeholder="Your email address" required>
+            <button type="submit">Subscribe</button>
+          </form>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 First Royal Microfinance Bank Limited. All rights reserved.</p>
+        <p>Licensed by the Central Bank of Nigeria | NDIC Insured</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Chat Widget -->
+  <div class="chat-widget">
+    <div class="chat-panel">
+      <div class="chat-header">
+        <h4><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Chat with Us</h4>
+        <button class="chat-close"><svg viewBox="0 0 24 24"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg></button>
+      </div>
+      <div class="chat-body">
+        <p>Hello! Welcome to First Royal MFB. How can we assist you today?</p>
+        <button class="chat-option"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="16" x2="12" y2="12"/><line x1="12" y1="8" x2="12.01" y2="8"/></svg> Account Opening</button>
+        <button class="chat-option"><svg viewBox="0 0 24 24"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg> Loan Inquiry</button>
+        <button class="chat-option"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg> Operating Hours</button>
+        <button class="chat-option"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg> Talk to an Agent</button>
+      </div>
+    </div>
+    <button class="chat-btn" aria-label="Chat with us"><svg viewBox="0 0 24 24"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg></button>
+  </div>
+
+  <button class="scroll-top" aria-label="Scroll to top"><svg viewBox="0 0 24 24"><polyline points="18 15 12 9 6 15"/></svg></button>
+
+  <script src="js/main.js"></script>
+  <script>
+    // FAQ Accordion
+    document.querySelectorAll('.faq-question').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const answer = btn.nextElementSibling;
+        const isOpen = answer.classList.contains('open');
+        // Close all others
+        document.querySelectorAll('.faq-answer.open').forEach(a => a.classList.remove('open'));
+        document.querySelectorAll('.faq-question.active').forEach(q => q.classList.remove('active'));
+        // Open clicked if it was closed
+        if (!isOpen) {
+          answer.classList.add('open');
+          btn.classList.add('active');
+        }
+      });
+    });
+  </script>
+</body>
+</html>
